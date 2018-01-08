@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    .container.contact-container.content-start
+        .row
+            .col.s12.m6
+                h1 Contact
+                    span.accent-color-text .
+                p.contact_phone_email
+                 a(href="mailto://hello@seadigital.co.nz") hello@seadigital.co.nz
+                 br
+                 a(href="tel:+6421426168") +64 21 426 168
+
+                p.contact_address 19 Edward Street, Te Aro
+                 br
+                 | Wellington, 6011
+            .col.s12.m6
+                form
+                    .row
+                        .col.s12.input-field
+                            input(id="first_name" name="first_name" type="text").validate
+                            label(for="first_name") WHAT's YOUR NAME?
+                    .row
+                        .col.s12.input-field
+                            input(id="contact_you" name="contact_you" type="text").validate
+                            label(for="contact_you") HOW CAN WE GET IN TOUCH?
+                    .row
+                        .col.s12.input-field
+                            textarea(id="how_help" name="how_help" type="text" rows=9 cols=9).materialize-textarea
+                            label(for="how_help") WHAT's YOUR NAME?
+                    .row
+                        .col.s12
+                            button(type="submit").btn.right GET CLOSER
+                            div.clearfix
+
+
