@@ -14,23 +14,26 @@ block content
                 p.contact_address 19 Edward Street, Te Aro
                  br
                  | Wellington, 6011
+                .partner-margin
+                script(src="https://apis.google.com/js/platform.js", async defer)
+                script(class="g-partnersbadge" data-agency-id="1608701073")
             .col.s12.m6
                 form
                     .row
                         .col.s12.input-field
-                            input(id="first_name" name="first_name" type="text").validate
-                            label(for="first_name") WHAT's YOUR NAME?
+                            textarea(id="how_help" name="how_help" type="text" rows=5 cols=5).materialize-textarea
+                            label(for="how_help") WHAT IS YOUR NAME?
                     .row
                         .col.s12.input-field
-                            input(id="contact_you" name="contact_you" type="text").validate
-                            label(for="contact_you") HOW CAN WE GET IN TOUCH?
+                            textarea(id="how_help" name="how_help" type="text" rows=5 cols=5).materialize-textarea
+                            label(for="how_help") WHAT IS YOUR BUSINESS?
                     .row
                         .col.s12.input-field
-                            textarea(id="how_help" name="how_help" type="text" rows=9 cols=9).materialize-textarea
-                            label(for="how_help") WHAT's YOUR NAME?
+                            textarea(id="how_help" name="how_help" type="text" rows=10 cols=10).materialize-textarea
+                            label(for="how_help") WHAT CAN WE HELP YOU GET CLOSER WITH?
                     .row
                         .col.s12
-                            button(type="submit").btn.right GET CLOSER
+                            button(type="submit" class="waves-effect waves-light btn").right GET CLOSER
                             div.clearfix
 
 
