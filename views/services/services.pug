@@ -1,47 +1,32 @@
 extends layoutScroll
 
 block content
-  #bee
-    #circle1
-  .full-scroll-window.active#frame1
-    .container
+    #bee
+      #circle1
+    .container.contact-container.content-start
       .row
         .col.s12
-          h1.first-text
-            | We Do
+          h1 What We Do
             span.accent-color-text .
-          p.sub-heading We bring your customers closer, looking at problems through human
-            br
-            | lenses, and
-            span.accent-color-text &nbsp;solving them&nbsp;
-            | using the wonderment of technology.
-            
+          p.sub-heading 
+            | We use decades of expertise 
+            | and the full wonderment of digital technology to help your achieve your goals.
             h4.services-start
-                a(href="/adwords-management") Adwords Performance
+                h3.span.accent-color-text Search Performance
+                p.sub-heading Organic Search (SEO)
+                p.sub-heading Local Search (Google Business Listings)
+                p.sub-heading Paid Search (Adwords)
+                p.sub-heading Performance Reporting (Measuring your digital efforts)
                 br
-                a(href="/amazon-cloud-services") Amazon Cloud Services
+                h3.span.accent-color-text Web Performance
+                p.sub-heading Web & Application Development
+                p.sub-heading Site Speed Optimisation (Cleaning up under-performing code)
+                p.sub-heading Server Performance & Hosting (Amazon Architects)
                 br
-                a(href="/search-engine-optimisation") Search Engine Performance
-                br
-                a(href="/web-development") Web Development
-                br
-                a(href="/web-performance") Web Performance
-                br
-                a(href="/contact") Facebook Marketing
-                br
-                a(href="/server-performance") Server Performance
-                br
-          .down-arrow
-            i.material-icons.medium.pulsate.scroll-down expand_more
-  .full-scroll-window#frame2
-    .container
-      .row
-        .col.s12
-          h1.first-text
-            | How close are you
-            span.accent-color-text ?
-          p.sub-heading We bring your customers closer, looking at problems through human
-            br
-            | lenses, and
-            span.accent-color-text &nbsp;solving them&nbsp;
-            | using the wonderment of technology.
+                h3.span.accent-color-text Performance Consulting
+                p.sub-heading Helping organisations like yours, identify, plan and solve digital problems.
+            .partner-margin
+                script(src="https://apis.google.com/js/platform.js", async defer)
+                script(class="g-partnersbadge" data-agency-id="1608701073")
+            
+                
