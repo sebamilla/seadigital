@@ -3,36 +3,36 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Sea: The Web & Search Performance Studio', metaDesc: 'Sea is a Wellington digital agency that helps you get closer to your customers by understanding & solving your web & search performance problems. Specialists in Web Development, Server Performance & Digital Marketing.' });
+  res.render('index', { title: 'Sea: Get Closer' });
 });
 
 router.get('/services', function(req,res, next){
-    res.render('services/services', {title: 'Sea: Get Closer With Digital Performance'});
+    res.render('services/services', {title: 'Sea: Services'});
 });
 
 router.get('/web-development', function(req, res, next){
   res.render('services/web', {title: 'Sea: Web Development'});
 });
 
-router.get('/web-performance', function(req, res, next){
-  res.render('services/web-performance', {title: 'Sea: Web Performance'});
-});
+// router.get('/web-performance', function(req, res, next){
+//   res.render('services/web-performance', {title: 'Sea: Web Performance'});
+// });
 
 router.get('/search-engine-optimisation', function(req, res, next){
   res.render('services/seo', {title: 'Sea: Search Engine Optimisation'});
 });
 
-router.get('/server-performance', function(req, res, next){
-  res.render('services/servers', {title: 'Sea: Server Performance'});
+router.get('/server-optimisation', function(req, res, next){
+  res.render('services/servers', {title: 'Sea: Server Optimisation'});
 });
 
-router.get('/adwords-management', function(req, res, next){
-  res.render('services/adwords', {title: 'Sea: Adwords Management'});
+router.get('/adwords-campaigns', function(req, res, next){
+  res.render('services/adwords', {title: 'Sea: Adwords Campaigns'});
 });
 
-router.get('/amazon-cloud-services', function(req, res, next){
-  res.render('services/amazon', {title: 'Sea: Amazon Cloud Services'});
-});
+// router.get('/amazon-cloud-services', function(req, res, next){
+//   res.render('services/amazon', {title: 'Sea: Amazon Cloud Services'});
+// });
 
 router.get('/projects', function(req,res, next){
     res.render('projects/projects', {title: 'Sea: Projects'});
@@ -81,68 +81,8 @@ router.get('/us', function(req,res, next){
 
 
 router.get('/contact', function(req, res, next){
-  res.render('contact', {title: 'Sea: Learn More About Sea & Web Performance', metaDesc: 'This is the content for the Meta Description' });
+  res.render('contact', {title: 'Sea: Test Contact'});
 });
-
-router.get('/test', function(req, res, next){
-  res.render('test', {title: 'Sea: Learn More About Sea & Web Performance'});
-});
-
-router.get('/success', function( req, res, next){
-    res.render('success', {title: 'Sea: Thanks For Getting In Touch'})
-})
-
-router.post('/success', function(req, res, next){
-    var api_key = 'key-4ae77a5435e4367cd8a4d5086bf42ab6';
-    var domain = 'sandbox8cc6737a87204e0ba76e7703c11d1e9f.mailgun.org';
-    var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
- 
-    var data = {
-      from: 'Sea Digital Website Enquiry <postmaster@sandbox8cc6737a87204e0ba76e7703c11d1e9f.mailgun.org>',
-      to: 'nev@seadigital.co.nz',
-      subject: req.body.userName,
-      text: req.body.howHelp
-    };
- 
-    mailgun.messages().send(data, function (error, body) {
-        if(!error){
-            console.log(body);
-            res.render('success', { title: 'Sea: Thanks for getting in touch.' })
-            const notifier = require('node-notifier');
-            // String
-            notifier.notify(
-              {
-                title: 'Sea',
-                message: 'Thanks for getting in touch. Expect to hear from us within 12 hours.',
-                icon: './public/images/NotificationMark.png', // Absolute path (doesn't work on balloons)
-                sound: true, // Only Notification Center or Windows Toasters
-                wait: false // Wait with callback, until user action is taken against notification
-              },
-              function(err, response) {
-            
-              }
-            );
-            return;
-        } else {
-            console.log(error);
-            res.render('contact', {title: 'Sea: Learn More About Sea & Web Performance'})
-            const notifier = require('node-notifier');
-            notifier.notify(
-              {
-                title: 'Sea',
-                message: 'Whoops... looks like you have missed a field.',
-                icon: './public/images/NotificationMark.png', // Absolute path (doesn't work on balloons)
-                sound: true, // Only Notification Center or Windows Toasters
-                wait: false // Wait with callback, until user action is taken against notification
-              },
-              function(err, response) {
-                return;
-              }
-            );
-            return;
-        }
-    });
-})
 
 
 module.exports = router;

@@ -1,18 +1,15 @@
-extends layoutScroll
+extends layout
 
 block content
-    #bee
-      #circle1
     .container.contact-container.content-start
         .row
-            .col.s12.m6.mb20
+            .col.s12.m6
                 h1 Contact
                     span.accent-color-text .
                 p.contact_phone_email
                  a(href="mailto://hello@seadigital.co.nz") hello@seadigital.co.nz
                  br
-                 br
-                 a(href="tel:+6443844532")  +64 4 384 4532
+                 a(href="tel:+6421426168") +64 21 426 168
 
                 p.contact_address 19 Edward Street, Te Aro
                  br
@@ -20,23 +17,23 @@ block content
                 .partner-margin
                 script(src="https://apis.google.com/js/platform.js", async defer)
                 script(class="g-partnersbadge" data-agency-id="1608701073")
-            .col.s12.m6.mb20
-                form(method="POST" action="success")
+            .col.s12.m6
+                form
                     .row
                         .col.s12.input-field
-                            textarea(id="how_help" class="validate" name="userName" type="text" rows=5 cols=5).materialize-textarea
-                            label(for="first_name" data-error="Nope not quiet right!" data-success="Correct!") Tell us your name?
+                            textarea(id="how_help" name="how_help" type="text" rows=5 cols=5).materialize-textarea
+                            label(for="how_help") WHAT IS YOUR NAME?
                     .row
                         .col.s12.input-field
-                            textarea(id="how_help" class ="validate" name="userBusiness" type="email" rows=5 cols=5).materialize-textarea
-                            label(for="email" data-error="Please add a valid email address" data-success="Correct!") What's your email?
+                            textarea(id="how_help" name="how_help" type="text" rows=5 cols=5).materialize-textarea
+                            label(for="how_help") WHAT IS YOUR BUSINESS?
                     .row
                         .col.s12.input-field
-                            textarea(id="how_help" class="validate" name="howHelp" type="text" rows=10 cols=10).materialize-textarea
-                            label(for="description" data-error="wrong" data-success="Thanks!") How can we help?
+                            textarea(id="how_help" name="how_help" type="text" rows=10 cols=10).materialize-textarea
+                            label(for="how_help") WHAT CAN WE HELP YOU GET CLOSER WITH?
                     .row
                         .col.s12
-                            button(type="submit" value="submit" class="waves-effect waves-light btn contact-submit").right Get in touch
+                            button(type="submit" class="waves-effect waves-light btn").right GET CLOSER
                             div.clearfix
 
 
