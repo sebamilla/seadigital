@@ -1,86 +1,3 @@
-//@media//
-
-//Carve Images//
-
-@media screen and (max-width: 768px) {
-    .image-organic {
-        height: 360px !important;
-        background-image: url('/images/carve/CarveOrganicLabelsMobile.png') !important;
-    }
-    .image-organic-views {
-        height: 360px !important;
-        background-image: url('/images/carve/CarvePageViewsLabelsMobile.png') !important;
-    }
-    .image-organic-bookings {
-        height: 360px !important;
-        background-image: url('/images/carve/CarveBookingsLabelsMobile.png') !important;
-    }
-    .image-organic-circles {
-        height: 400px !important;   
-    }
-    .image-organic-circles-views {
-        height: 400px !important;
-        background-image: url('/images/carve/CarvePageViewsLabelsOverviewMobile.png') !important;
-    }
-    .image-organic-circles-bookings{
-        height: 400px !important;
-        background-image: url('/images/carve/CarveOrganicLabelsOverviewMobile.png') !important;
-    }
-    .services-start{
-        padding-top: 20px !important;
-    }
-    .services-start-mobile{
-        padding-top: 0px !important;
-}
-}
-
-@media screen and (min-width: 1600px) {
-    .image-organic {
-        height: 770px !important;
-    }
-    .image-organic-views {
-        height: 860px !important;
-    }
-    .image-organic-circles {
-        height: 860px !important;
-    }
-    .image-organic-circles-views {
-        height: 860px !important;
-    }
-    .image-organic-circles-bookings {
-        height: 860px !important;
-    }
-    .image-organic-labels {
-        height: 850px !important;
-    }
-}
-
-//Method Images//
-
-@media screen and (max-width: 768px) {
-    .image-organic-method {
-        height: 560px !important;
-        //background-image: url('/images/method/MethodOrganicLabelsMobile.png') !important;
-    }
-    .image-organic-overview-method {
-        height: 360px !important;
-        background-image: url('/images/method/MethodOrganicLabelsOverviewMobile.png') !important;
-    }
-    
-}
-
-@media screen and (min-width: 1600px) {
-    .image-organic-method {
-        height: 370px !important;
-    }
-    .image-organic-overview-method {
-        height: 860px !important;
-    }
-}
-
-
-
-
 //Image Classes//
 
 
@@ -1711,9 +1628,30 @@ h5{
   height: 100%;
   width: 100%;
   overflow: auto;
-  left: 28px;
+  left: 14px;
   top: $navbar-height;
   z-index: 1;
+}
+
+@media screen and (max-width: 320px) and (min-width: 1px){
+
+.mw{
+  margin-left: 4px;
+}
+}
+
+@media screen and (max-width: 425px) and (min-width: 321px){
+
+.mw{
+  margin-left: 7px;
+}
+}
+
+@media screen and (max-width: 768px) and (min-width:426px) {
+
+.mw{
+  margin-left: 42px;
+}
 }
 
 /////////////////////////
