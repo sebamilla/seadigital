@@ -1632,27 +1632,40 @@ h5{
   top: $navbar-height;
   z-index: 1;
 }
-
+// media queries for hidden scroll //
 @media screen and (max-width: 320px) and (min-width: 1px){
 
 .mw{
-  margin-left: 0px;
+  margin-right: 32px;
 }
 }
 
 @media screen and (max-width: 425px) and (min-width: 321px){
 
 .mw{
-  margin-left: 4px;
+  margin-right: 38px;
 }
 }
 
 @media screen and (max-width: 768px) and (min-width:426px) {
 
 .mw{
-  margin-left: 44px;
+  margin-right: 74px;
 }
 }
+
+@media screen and (max-width: 1024px) and (min-width:769px) {
+
+.mw{
+  margin-right: 166px;
+}
+}
+
+.rm-img{
+ margin-right: 3%;
+ margin: 0;
+}
+
 
 /////////////////////////
 
