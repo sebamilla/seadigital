@@ -1016,86 +1016,157 @@
 
 @media screen and (max-width: 320px) and (min-width: 1px){
 
-.adwords-service-image{
-    height: 200px !important;
-    width: auto !important;
-    background-position: bottom !important;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+.adwords-service-image-search{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 15px;
+}
+
+.adwords-service-image-display{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 15px;
+}
+
+.adwords-service-image-app{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 15px;
+}
+
+.adwords-service-image-video{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 15px;
 }
 }
 
 @media screen and (max-width: 425px) and (min-width: 321px){
 
-.adwords-service-image{
-    height: 220px !important;
-    height: 220px !important;
-    width: auto !important;
-    background-position: bottom !important;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+.adwords-service-image-search{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 25px;
+}
+
+.adwords-service-image-display{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 25px;
+}
+
+.adwords-service-image-app{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 25px;
+}
+
+.adwords-service-image-video{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 25px;
 }
 }
 
 @media screen and (max-width: 768px) and (min-width: 426px){
 
-.adwords-service-image{
-    height: 350px !important;
-    width: auto !important;
-    background-position: bottom !important;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+.adwords-service-image-search{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 35px;
+}
+
+.adwords-service-image-display{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 35px;
+}
+
+.adwords-service-image-app{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 35px;
+    padding-top: 35px;
+}
+
+.adwords-service-image-video{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 35px;
+    
 }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px){
 
-.adwords-service-image{
-    height: 420px !important;
-    width: auto !important;
-    background-position: bottom !important;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+.adwords-service-image-search{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 35px;
+}
+
+.adwords-service-image-display{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 35px;
+}
+
+.adwords-service-image-app{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 35px;
+}
+
+.adwords-service-image-video{
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 35px;
 }
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1025px){
 
-.adwords-service-image{
-    height: 500px !important;
-    width: auto !important;
-    background-position: bottom !important;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+.adwords-service-image-search{
+    height: auto !important;
+    width: 100% !important;
+}
+
+.adwords-service-image-display{
+    height: auto !important;
+    width: 100% !important;
+}
+
+.adwords-service-image-app{
+    height: auto !important;
+    width: 100% !important;
+}
+
+.adwords-service-image-video{
+    height: auto !important;
+    width: 100% !important;
 }
 }
 
 @media screen and (min-width: 1441px){
 
-.adwords-service-image{
-    height: 650px !important;
-    width: auto !important;
-    background-position: center !important;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+.adwords-service-image-search{
+    height: auto !important;
+    width: 100% !important;
+}
+
+.adwords-service-image-display{
+    height: auto !important;
+    width: 100% !important;
+}
+
+.adwords-service-image-app{
+    height: auto !important;
+    width: 100% !important;
+}
+
+.adwords-service-image-video{
+    height: auto !important;
+    width: 100% !important;
 }
 }
 
